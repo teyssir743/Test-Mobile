@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorSecondary"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="@dimen/_5sdp">
+
+    <!-- Your CardView content goes here -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- Place your RelativeLayout content here -->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/contact_image"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/baseline_person_24"
+            android:layout_gravity="center"
+            app:civ_border_width="@dimen/_1sdp"
+            app:civ_border_color="@color/colorTextPrimary"
+            android:padding="@dimen/_5sdp"
+
+            />
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ContactName"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/contact_image"
+            android:layout_marginStart="@dimen/_5sdp"
+
+            />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/contact_number_dial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/baseline_phone_24"
+            app:tint="@color/colorTextPrimary" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
